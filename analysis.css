@@ -1,0 +1,12 @@
+body.bg {
+  background: url('../image/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial;
+}
+.card {
+  width: 400px;
+  margin: 120px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+}

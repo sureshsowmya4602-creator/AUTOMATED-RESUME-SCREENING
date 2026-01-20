@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Analysis</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background-image: url("https://aigptjournal.com/wp-content/uploads/2024/07/AI-Resume-Screening-in-Action.png");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .analysis-box {
+            background: rgba(255, 255, 255, 0.92);
+            padding: 50px;
+            width: 500px;
+            border-radius: 50px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 70px;
+            color: #2c3e50;
+        }
+
+        p {
+            font-size: 17px;
+            margin: 12px 0;
+            color: #34495e;
+        }
+
+        button {
+            margin-top: 40px;
+            width: 100%;
+            padding: 20px;
+            background: #2c5036b5;
+            color: light red;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        button:hover {
+            background: #2f2d1a;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="analysis-box">
+    <h2>Resume Analysis Result</h2>
+
+    <p><b>Match Score:</b> {{ score }}%</p>
+    <p><b>Extracted Skills:</b> {{ skills }}</p>
+    <p><b>Experience:</b> {{ experience }} </p>
+
+    <a href="/dashboard">
+        <button>Go to Dashboard</button>
+    </a>
+</div>
+
+</body>
+</html>

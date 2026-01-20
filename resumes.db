@@ -1,0 +1,15 @@
+SKILLS = ["python", "java", "sql", "ml", "nlp"]
+
+def analyze_resume(text):
+    text = text.lower()
+    skills = [s for s in SKILLS if s in text]
+
+    import re
+    exp = re.findall(r'(\d+)\s+years', text)
+    experience = int(exp[0]) if exp else 0
+
+    score = len(skills) * 10 + experience * 5
+
+    decision = "Selected" if score >= 50 else "Rejected"
+
+    return skills, experience, score, decision

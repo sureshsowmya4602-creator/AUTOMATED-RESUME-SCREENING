@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Resume</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: #f4f4f4;
+            display: flex;
+        }
+
+        /* LEFT SIDE */
+        .left {
+            background-image: url("http://www.pixelstalk.net/wp-content/uploads/2016/07/Free-Plain-HD-Photos.jpg");
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: ;
+            padding: 80px;
+            width: 500px;
+            border-radius: 30px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            margin-bottom: 35px;
+            text-align: left;
+        }
+
+        textarea {
+            width: 120%;
+            height: 200px;
+            padding: 20px;
+            resize: center;
+            border-radius: 150px;
+            border: 1px solid #5a91c1c9;
+        }
+
+        button {
+            margin-top: 15px;
+            width: 120%;
+            padding: 20px;
+            background: #4f2c50;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1a2f1e;
+        }
+
+        /* RIGHT SIDE IMAGE */
+        .right {
+            width: 50%;
+            background-image: url('https://cdn.optcms.com/www.bespokeapps.com/assets/2025/202506/20250628-175112904053253.webp');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+
+</head>
+<body>
+
+<!-- LEFT SIDE -->
+<div class="left">
+    <div class="container">
+        <h2>                   UPLOAD RESUME</h2>
+
+        <form method="POST">
+            <textarea name="resume" placeholder="           Paste resume here" required></textarea>
+            <button type="submit">submit</button>
+        </form>
+    </div>
+</div>
+
+<!-- RIGHT SIDE -->
+<div class="right"></div>
+
+</body>
+</html>

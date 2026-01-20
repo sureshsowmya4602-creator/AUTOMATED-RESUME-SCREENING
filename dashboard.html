@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background-image: url("https://hirebee.ai/wp-content/uploads/2023/07/recruiter-using-candidate-screening-with-ai-to-find-the-right-candidates-1.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dashboard-box {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            width: 520px;
+            border-radius: 14px;
+            box-shadow: 0 0 25px rgba(0,0,0,0.4);
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 25px;
+            color: #2c3e50;
+        }
+
+        .stat {
+            font-size: 18px;
+            margin: 15px 0;
+            color: #34495e;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #502c46;
+        }
+
+        button {
+            margin-top: 25px;
+            width: 100%;
+            padding: 12px;
+            background: #502c46;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #1a252f;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="dashboard-box">
+    <h1>Dashboard</h1>
+
+    <p class="stat">Total Resumes Analyzed: <span class="highlight">1</span></p>
+    <p class="stat">Qualified Candidates: <span class="highlight">1</span></p>
+
+    <a href="/upload">
+        <button>Analyze Another Resume</button>
+    </a>
+</div>
+
+</body>
+</html>
